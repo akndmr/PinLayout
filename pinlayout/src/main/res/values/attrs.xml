@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PinLayout">
+        <attr name="pin_count" format="integer" />
+        <attr name="pin_view_radius" format="dimension|float" />
+        <attr name="pin_view_gap" format="dimension|float" />
+        <attr name="pin_view_extra_gap_index" format="integer" />
+        <attr name="pin_view_extra_gap" format="dimension|float" />
+        <attr name="pin_view_active_color" format="color" />
+        <attr name="pin_view_default_color" format="color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biscay"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32"
+        android:text="4 Pin, Gap Default, Radius Default"
+        android:textColor="@color/bg1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_layout_1"
+        app:layout_constraintEnd_toEndOf="@+id/pin_layout_1"
+        app:layout_constraintStart_toStartOf="@+id/pin_layout_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.akndmr.pinlayout.PinLayout
+        android:id="@+id/pin_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_label1"
+        app:pin_count="4" />
+
+    <TextView
+        android:id="@+id/text_view_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32"
+        android:text="6 Pin, Gap 8dp, Radius 10dp"
+        android:textColor="@color/bg1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/pin_layout_2"
+        app:layout_constraintStart_toStartOf="@+id/pin_layout_2"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar1" />
+
+    <com.akndmr.pinlayout.PinLayout
+        android:id="@+id/pin_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_label2"
+        app:pin_count="6"
+        app:pin_view_active_color="@color/bg2"
+        app:pin_view_extra_gap="@dimen/margin_32"
+        app:pin_view_extra_gap_index="2"
+        app:pin_view_gap="8dp"
+        app:pin_view_radius="10dp" />
+
+    <TextView
+        android:id="@+id/text_view_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32"
+        android:text="8 Pin, Gap 12dp, Radius 16dp"
+        android:textColor="@color/bg1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/pin_layout_2"
+        app:layout_constraintStart_toStartOf="@+id/pin_layout_2"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+    <com.akndmr.pinlayout.PinLayout
+        android:id="@+id/pin_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_label3"
+        app:pin_count="8"
+        app:pin_view_active_color="@color/bg3"
+        app:pin_view_extra_gap="@dimen/margin_32"
+        app:pin_view_extra_gap_index="3"
+        app:pin_view_gap="12dp"
+        app:pin_view_radius="16dp" />
+
+    <TextView
+        android:id="@+id/text_view_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32"
+        android:textColor="@color/bg1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_pin"
+        app:layout_constraintEnd_toEndOf="@+id/pin_layout_2"
+        app:layout_constraintStart_toStartOf="@+id/pin_layout_2"
+        app:layout_constraintTop_toBottomOf="@+id/pin_layout_3" />
+
+    <Button
+        android:id="@+id/button_add_pin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:backgroundTint="@color/bg1"
+        android:text="Add Pin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_remove_pin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_remove_pin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:backgroundTint="@color/bg1"
+        android:text="Remove Pin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_add_pin" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:progressTint="@color/white"
+        android:tooltipText="asdf"
+        app:layout_constraintEnd_toEndOf="@+id/pin_layout_1"
+        app:layout_constraintStart_toStartOf="@+id/pin_layout_1"
+        app:layout_constraintTop_toBottomOf="@+id/pin_layout_1" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:progressTint="@color/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/pin_layout_2"
+        app:layout_constraintStart_toStartOf="@+id/pin_layout_2"
+        app:layout_constraintTop_toBottomOf="@+id/pin_layout_2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:progressTint="@color/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/pin_layout_3"
+        app:layout_constraintStart_toStartOf="@+id/pin_layout_3"
+        app:layout_constraintTop_toBottomOf="@+id/pin_layout_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

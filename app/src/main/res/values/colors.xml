@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color1">#303952</color>
+    <color name="color2">#303952</color>
+    <color name="color3">#303952</color>
+    <color name="color4">#546de5</color>
+    <color name="color5">#546de5</color>
+    <color name="black">#FF000000</color>
+    <color name="white2">#FFFFFF</color>
+    <color name="biscay">#303952</color>
+    <color name="bg1">#a4aec9</color>
+    <color name="bg2">#f5cd79</color>
+    <color name="bg3">#3dc1d3</color>
+</resources>
