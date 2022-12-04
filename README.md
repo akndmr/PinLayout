@@ -34,6 +34,8 @@ Step 2. Add the dependency
 ## Demo
 https://user-images.githubusercontent.com/15641747/205468372-c6af52be-6ebe-4691-b235-d2252ec1cb2a.mov
 
+_Progressbar is for visual purposes; not part of PinLayout._
+
 
 
 ## Usage
