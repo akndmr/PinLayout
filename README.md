@@ -8,6 +8,7 @@ Android PinLayout for auth screens.
 ![GitHub issues](https://img.shields.io/github/issues/akndmr/PinLayout)
 ![GitHub Repo stars](https://img.shields.io/github/stars/akndmr/PinLayout?style=social)
 ![JitPack](https://img.shields.io/jitpack/version/com.github.akndmr/PinLayout)
+
 ## Installation
 
 Step 1. Add the JitPack repository to your build file
