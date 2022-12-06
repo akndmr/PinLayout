@@ -79,6 +79,7 @@ You can customize PinLayout with custom attributes.
 ```kotlin
  app:pin_count="8"
  app:pin_view_active_color="@color/bg3"
+ app:pin_view_default_color="@color/bg4"
  app:pin_view_gap="12dp"
  app:pin_view_radius="16dp"
  app:pin_view_extra_gap="@dimen/margin_32"
