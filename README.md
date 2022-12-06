@@ -85,6 +85,10 @@ You can customize PinLayout with custom attributes.
  app:pin_view_extra_gap="@dimen/margin_32"
  app:pin_view_extra_gap_index="3"
 ```
+You can use extra gap attribute to group pin views to fit with your UI requirements.
+
+<img width="318" alt="with_gap_and_without_gap" src="https://user-images.githubusercontent.com/15641747/206033783-b325c327-c434-4cbd-ac2f-a38ce9905700.png">
+
 
 ## Roadmap
 
