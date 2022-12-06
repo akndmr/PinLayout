@@ -44,12 +44,12 @@ _Progressbar is for visual purposes; not part of PinLayout._
 
 You can add pin by providing a data source like keyboard.
 ```kotlin
- addPinCode(number)
+ addPinCode(code: String)
 ```
 
 You can add whole pin from a clipboard.
 ```kotlin
- pasteFullPinCode()
+ pasteFullPinCode(fullCode: String)
 ```
 
 
