@@ -40,8 +40,6 @@ _Progressbar is for visual purposes; not part of PinLayout._
 
 ## Usage
 
-#### Show a AirySnackbar
-
 You can add pin by providing a data source like keyboard.
 ```kotlin
  addPinCode(code: String)
